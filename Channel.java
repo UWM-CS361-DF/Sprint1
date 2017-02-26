@@ -1,6 +1,7 @@
+import java.util.*;
 
 public class Channel {
-	
+	List<Channel> channels = new ArrayList<Channel>(9);
 	private int channelNumber;
 	private Sensor sensor;
 	private boolean channelState;

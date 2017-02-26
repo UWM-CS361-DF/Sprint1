@@ -67,7 +67,7 @@ public class Simulator {
 			scIn = new Scanner(new File(args[0]));
 		}
 		else{
-			scIn = new Scanner(System.in);
+			scIn = new Scanner(SystemSet.in);
 		}
 		
 		while(scIn.hasNextLine()){
@@ -78,9 +78,9 @@ public class Simulator {
 				stringInput=stringInput.substring(stringInput.indexOf("\t")+1, stringInput.length());
 				Thread.sleep(1000); //wait 1 second before next line is executed
 			}
-			System.out.println(stringInput);
+			SystemSet.out.println(stringInput);
 			if(stringInput.equals("EXIT")){
-				System.out.println("Exited Simulator");
+				SystemSet.out.println("Exited Simulator");
 				scIn.close();
 				break;
 			}

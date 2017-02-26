@@ -1,7 +1,7 @@
 public class ChronoInterface {
 	//List<Channel> channels = new ArrayList<Channel>(9);//0 will be an empty channel location for ease of assigning
 	Csystem system = new Csystem();
-	Exit exit = new Exit();
+//	Exit exit = new Exit();
 	Reset reset = new Reset();
 	Power power = new Power();
 	Race race = new Race();
@@ -25,7 +25,7 @@ public class ChronoInterface {
 	}
 	public void time(String time){
 		String[] splitTime= time.split(":");
-		system.setTime(Integer.parseInt(splitTime[0]), Integer.parseInt(splitTime[1]), Float.parseFloat(splitTime[2]));
+		system.setTime(Integer.parseInt(splitTime[0]), Integer.parseInt(splitTime[1]), Integer.parseInt(splitTime[2]));
 	}
 	public void dnf(){
 		race.dnf();

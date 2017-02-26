@@ -1,8 +1,9 @@
 
 public class Race {
 	
-	private enum Event {IND, PARIND, GRP, PARGRP;}
+	enum Event {IND, PARIND, GRP, PARGRP;}
 	private Event event;
+	public int runNum;//not sure
 	
 	public Race(Event event) {
 		switch (this.event) {
@@ -15,5 +16,9 @@ public class Race {
 		case PARGRP:
 			break;
 		}
+	}
+	
+	public void setEvent(Event e){
+		event = e;
 	}
 }
